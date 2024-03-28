@@ -4,9 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RMS_Project"
+        xmlns:userControls="clr-namespace:RMS_Project.View.UserControls"
+        xmlns:view="clr-namespace:RMS_Project.View"
+
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--Menu bar -->
+        
+        <!--Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+                <ColumnDefinition Width=".6*"></ColumnDefinition>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <view:CompanyRegisterForm HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"></view:CompanyRegisterForm>
+            <view:CompanyLoginForm HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"></view:CompanyLoginForm>
+        </Grid>
+        <!--Footer -->
+        <Rectangle Grid.Row="2"/>
     </Grid>
 </Window>
