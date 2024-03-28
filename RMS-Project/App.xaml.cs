@@ -10,4 +10,3 @@ namespace RMS_Project;
 public partial class App : Application
 {
 }
-
