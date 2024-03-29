@@ -5,20 +5,23 @@ namespace RMS_Project.View.UserControls;
 
 public partial class MyTextBox : UserControl
 {
+    private string placeHolder;
+
     public MyTextBox()
     {
         InitializeComponent();
     }
-    
-    private string placeHolder;
-    public string PlaceHolder   
+
+    public string PlaceHolder
     {
-        get { return placeHolder; }
-        set { 
+        get => placeHolder;
+        set
+        {
             placeHolder = value;
             txtPlaceHoder.Text = placeHolder;
         }
     }
+
     private void btnClear_Click(object sender, RoutedEventArgs e)
     {
         txtInput.Clear();
@@ -27,11 +30,9 @@ public partial class MyTextBox : UserControl
 
     private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
     {
-        if(string.IsNullOrEmpty(txtInput.Text)) {
+        if (string.IsNullOrEmpty(txtInput.Text))
             txtPlaceHoder.Visibility = Visibility.Visible;
-        } else
-        {
+        else
             txtPlaceHoder.Visibility = Visibility.Hidden;
-        }
     }
 }

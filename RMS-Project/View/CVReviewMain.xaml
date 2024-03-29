@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PTTK_DuyetHoSo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -13,11 +12,11 @@
 
         </Grid.RowDefinitions>
         <TabControl SelectionChanged="TabControl_SelectionChanged" Grid.Row="0">
-            <TabItem Header="Danh sách hồ sơ" Name="Tab1"/>
-            <TabItem Header="Danh sách hồ sơ đã xử lý" Name="Tab2"/>
+            <TabItem Header="Danh sách hồ sơ" Name="Tab1" />
+            <TabItem Header="Danh sách hồ sơ đã xử lý" Name="Tab2" />
         </TabControl>
-        <Frame Grid.Row="1" Name="contentFrame"/>
-    
+        <Frame Grid.Row="1" Name="contentFrame" />
+
 
     </Grid>
 </Window>

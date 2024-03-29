@@ -3,20 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:RMS_Project.View"
              xmlns:userControls="clr-namespace:RMS_Project.View.UserControls"
              mc:Ignorable="d"
              d:DesignHeight="250" d:DesignWidth="400">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBlock Text="Đăng nhập" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <userControls:MyTextBox Grid.Row="1" PlaceHolder="Mã số thuế"/>
-        <userControls:MyTextBox Grid.Row="2" PlaceHolder="Mật khẩu"/>
-        <Button Grid.Row="3" Height="25" Width="60" Click="ButtonBase_OnClick" Content="Gửi"/>
+        <TextBlock Text="Đăng nhập" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <userControls:MyTextBox Grid.Row="1" PlaceHolder="Mã số thuế" />
+        <userControls:MyTextBox Grid.Row="2" PlaceHolder="Mật khẩu" />
+        <Button Grid.Row="3" Height="25" Width="60" Click="ButtonBase_OnClick" Content="Gửi" />
     </Grid>
 </UserControl>
