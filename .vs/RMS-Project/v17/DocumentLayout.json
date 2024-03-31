@@ -1,34 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\RMS-Project\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\companydeadlinelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\companydeadlinelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\view\\cvreviewmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvreviewmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\view\\cvreviewmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\cvreviewmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvreviewmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\view\\cvlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\cvprocessinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvprocessinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\view\\companyloginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\companyloginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\companyloginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|d:\\github\\rms-project\\rms-project\\view\\cvlist_company.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\companyregisterform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\companyregisterform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\cvdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\cvlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\cvlist_company.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvlist_company.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|c:\\users\\admin\\source\\repos\\rms-project\\rms-project\\view\\cvreviewmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\view\\cvreviewmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,40 +62,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CVReviewMain.xaml.cs",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml.cs",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\CVReviewMain.xaml.cs",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml.cs",
-              "RelativeToolTip": "RMS-Project\\View\\CVReviewMain.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:37:45.954Z",
+              "DocumentIndex": 0,
+              "Title": "companydeadlineList.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\companydeadlineList.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\companydeadlineList.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\companydeadlineList.xaml*",
+              "RelativeToolTip": "RMS-Project\\View\\companydeadlineList.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-31T14:07:34.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CVReviewMain.xaml",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\CVReviewMain.xaml",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml",
-              "RelativeToolTip": "RMS-Project\\View\\CVReviewMain.xaml",
+              "DocumentIndex": 2,
+              "Title": "CVProcessingList.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVProcessingList.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CVProcessingList.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVProcessingList.xaml",
+              "RelativeToolTip": "RMS-Project\\View\\CVProcessingList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-28T13:37:27.788Z",
+              "WhenOpened": "2024-03-31T14:05:49.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CVDetail.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVDetail.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CVDetail.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVDetail.xaml",
+              "RelativeToolTip": "RMS-Project\\View\\CVDetail.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-31T14:05:40.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CompanyRegisterForm.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "RelativeToolTip": "RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-31T14:05:33.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CVList.xaml",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVList.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVList.xaml",
               "RelativeDocumentMoniker": "RMS-Project\\View\\CVList.xaml",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVList.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVList.xaml",
               "RelativeToolTip": "RMS-Project\\View\\CVList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-28T13:37:23.391Z",
@@ -79,36 +126,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\App.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\App.xaml",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\App.xaml",
-              "RelativeToolTip": "RMS-Project\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-28T13:36:51.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "RMS-Project\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\MainWindow.xaml.cs",
-              "RelativeToolTip": "RMS-Project\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:36:40.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CompanyLoginForm.xaml",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CompanyLoginForm.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CompanyLoginForm.xaml",
               "RelativeDocumentMoniker": "RMS-Project\\View\\CompanyLoginForm.xaml",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CompanyLoginForm.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CompanyLoginForm.xaml",
               "RelativeToolTip": "RMS-Project\\View\\CompanyLoginForm.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-28T13:36:19.384Z",
@@ -116,15 +138,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "CVReviewMain.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CVReviewMain.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml",
+              "RelativeToolTip": "RMS-Project\\View\\CVReviewMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:37:27.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CVList_Company.xaml",
-              "DocumentMoniker": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVList_Company.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVList_Company.xaml",
               "RelativeDocumentMoniker": "RMS-Project\\View\\CVList_Company.xaml",
-              "ToolTip": "D:\\GitHub\\RMS-Project\\RMS-Project\\View\\CVList_Company.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVList_Company.xaml",
               "RelativeToolTip": "RMS-Project\\View\\CVList_Company.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-28T13:36:07.681Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\MainWindow.xaml",
+              "RelativeToolTip": "RMS-Project\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-31T14:05:31.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "RMS-Project\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\AssemblyInfo.cs",
+              "RelativeToolTip": "RMS-Project\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T14:05:28.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CVReviewMain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml.cs",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CVReviewMain.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\View\\CVReviewMain.xaml.cs",
+              "RelativeToolTip": "RMS-Project\\View\\CVReviewMain.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:37:45.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\App.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\App.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\App.xaml",
+              "RelativeToolTip": "RMS-Project\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:36:51.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RMS-Project\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RMS-Project\\RMS-Project\\MainWindow.xaml.cs",
+              "RelativeToolTip": "RMS-Project\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:36:40.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },
