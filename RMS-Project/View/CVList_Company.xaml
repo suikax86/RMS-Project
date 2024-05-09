@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PTTK_DuyetHoSo"
         mc:Ignorable="d"
         Title="DuyetHoSo_DoanhNghiep" Height="450" Width="800">
     <Grid>
@@ -15,9 +14,9 @@
         <ListView Grid.Row="0" Margin="10" ItemsSource="{Binding CVList}" Name="DanhSachHoSo">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Mã hồ sơ" DisplayMemberBinding="{Binding CV_ID}"/>
-                    <GridViewColumn Header="Vị trí" DisplayMemberBinding="{Binding Position}"/>
-                    <GridViewColumn Header="Trạng thái" DisplayMemberBinding="{Binding Status}"/>
+                    <GridViewColumn Header="Mã hồ sơ" DisplayMemberBinding="{Binding CV_ID}" />
+                    <GridViewColumn Header="Vị trí" DisplayMemberBinding="{Binding Position}" />
+                    <GridViewColumn Header="Trạng thái" DisplayMemberBinding="{Binding Status}" />
                     <GridViewColumn Header="Duyệt" Width="100">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
@@ -31,8 +30,8 @@
             </ListView.View>
         </ListView>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="Hủy" Margin="5" Width="100"/>
-            <Button Content="Duyệt" Margin="5" Width="100"/>
+            <Button Content="Hủy" Margin="5" Width="100" />
+            <Button Content="Duyệt" Margin="5" Width="100" />
         </StackPanel>
 
     </Grid>
