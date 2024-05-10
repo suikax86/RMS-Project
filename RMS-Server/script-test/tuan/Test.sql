@@ -2,8 +2,9 @@ use RMS
 exec p_getCVList 'Dang xu ly'
 exec p_getCVList NULL
 
-exec p_process_cv 1
-exec p_process_cv 9
+exec p_process_cv 1, 'Da xu ly'
+exec p_process_cv 2, 'Khong du dieu kien'
+exec p_process_cv 9, 'Khong du dieu kien'
 
 exec p_getcvlist_company 2
 exec p_getcvlist_company 4

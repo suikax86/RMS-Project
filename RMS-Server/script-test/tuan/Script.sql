@@ -98,14 +98,15 @@ GO
 --UPDATE trang thai CV sau khi duoc gui boi nhan vien
 CREATE PROCEDURE p_process_cv
 (
-	@CVID INT
+	@CVID INT,
+	@status varchar(255)
 )
 AS
 BEGIN
 	IF EXISTS (SELECT CV_ID FROM Check_CV WHERE CV_ID = @CVID)
 		BEGIN
 			UPDATE Check_CV
-			SET CV_Status = 'Da xu ly', SentDate = GETDATE()
+			SET CV_Status = @status, SentDate = GETDATE()
 			WHERE CV_ID = @CVID
 		END
 	ELSE
