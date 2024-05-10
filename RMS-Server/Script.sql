@@ -3,10 +3,17 @@
 -- ALTER TABLE Roles DROP CONSTRAINT IF EXISTS FK_Companies_Accounts;
 -- ALTER TABLE Companies DROP CONSTRAINT IF EXISTS FK_Companies_Accounts;
 -- ALTER TABLE Applicant DROP CONSTRAINT IF EXISTS FK_Applicant_Accounts;
+--ALTER TABLE PostForm DROP CONSTRAINT IF EXISTS FK_PostForm_Company;
+--ALTER TABLE JobPosting DROP CONSTRAINT IF EXISTS FK_JobPosting_PostForm;
+--ALTER TABLE JobPosting DROP CONSTRAINT IF EXISTS FK_JobPosting_NV;
+
 DROP TABLE IF EXISTS Accounts
 DROP TABLE IF EXISTS Companies;
 DROP TABLE IF EXISTS Roles;
 DROP TABLE IF EXISTS Applicant;
+DROP TABLE IF EXISTS Employees;
+DROP TABLE IF EXISTS PostForm;
+DROP TABLE IF EXISTS JobPosting;
 DROP PROCEDURE IF EXISTS RegisterCompany;
 DROP PROCEDURE IF EXISTS RegisterApplicant;
 DROP PROCEDURE IF EXISTS CreateAccountForCompany;
@@ -47,6 +54,15 @@ CREATE TABLE Companies (
     UNIQUE (CompanyName, TaxIdentificationNumber)
 );
 GO;
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY IDENTITY,
+    EmployeeName NVARCHAR(255) NOT NULL,
+    Address NVARCHAR(255) NOT NULL,
+    DOB DATE NOT NULL,
+    Email NVARCHAR(255),
+    Phone NVARCHAR(10)
+);
+GO;
 
 CREATE TABLE Applicant (
     ApplicantID INT PRIMARY KEY IDENTITY,
@@ -59,6 +75,32 @@ CREATE TABLE Applicant (
     DOB DATE NOT NULL,
     FOREIGN KEY (AccountID) REFERENCES Accounts(AccountID),
     UNIQUE (IdentityCardNumber)
+);
+GO;
+
+-- Tạo bảng phiếu đăng tuyển
+CREATE TABLE PostForm (
+    FormID INT PRIMARY KEY IDENTITY,
+    CompanyID INT NOT NULL,
+    Position NVARCHAR(255) NOT NULL,
+    Quantity INT NOT NULL,
+    StartTime DATE NOT NULL,
+    EndTime DATE NOT NULL,
+    Requirements NVARCHAR(255)
+    CONSTRAINT FK_PostForm_Company FOREIGN KEY (CompanyID) REFERENCES Companies(CompanyID)
+);
+GO;
+
+
+--- Tạo bảng phiếu quảng cáo
+CREATE TABLE JobPosting (
+    JobPostingID INT PRIMARY KEY IDENTITY,
+    NV_ID INT NOT NULL,
+    PostTime DATE NOT NULL,PostingMethod NVARCHAR(255) NOT NULL,
+    PostFormID INT NOT NULL,
+    PostStatus NVARCHAR(255) NOT NULL,
+    CONSTRAINT FK_JobPosting_PostForm FOREIGN KEY (PostFormID) REFERENCES PostForm(FormID),
+    CONSTRAINT FK_JobPosting_NV FOREIGN KEY (NV_ID) REFERENCES Employees(EmployeeID)
 );
 GO;
 
@@ -82,6 +124,8 @@ BEGIN
         END
 END
 GO;
+
+
 
 CREATE OR ALTER PROCEDURE RegisterCompany
     @CompanyName NVARCHAR(255),
