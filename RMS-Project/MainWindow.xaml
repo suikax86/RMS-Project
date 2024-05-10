@@ -22,8 +22,8 @@
                 <ColumnDefinition Width=".6*" />
                 <ColumnDefinition Width=".2*" />
             </Grid.ColumnDefinitions>
-            <view:CompanyRegisterForm HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" />
-            <view:CompanyLoginForm HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" />
+            <!--<view:CompanyRegisterForm HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" />
+            <view:CompanyLoginForm HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" />-->
         </Grid>
         <!--Footer -->
         <Rectangle Grid.Row="2" />

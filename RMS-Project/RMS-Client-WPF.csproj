@@ -10,6 +10,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="View\extendDeadlinecompany.xaml.cs" />
+      <Compile Remove="View\ListCompanyDeadline.xaml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Remove="View\extendDeadlinecompany.xaml" />
+      <Page Remove="View\ListCompanyDeadline.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
       <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
       <PackageReference Include="System.Net.Http" Version="4.3.4" />

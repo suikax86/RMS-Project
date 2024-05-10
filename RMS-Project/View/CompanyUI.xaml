@@ -1,0 +1,20 @@
+﻿<Window x:Class="RMS_Project.View.CompanyUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RMS_Project.View"
+        xmlns:view="clr-namespace:RMS_Project.View"
+        mc:Ignorable="d"
+        Title="CompanyUI" Height="850" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Đăng ký tuyển dụng">
+                <view:JobPosting/>
+            </TabItem>
+            <TabItem Header="Thông tin tuyển dụng đã đăng ký">
+                <view:JobPostingList/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
