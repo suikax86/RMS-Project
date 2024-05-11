@@ -1,48 +1,9 @@
-﻿USE RMS;
-GO
-
-
-DROP PROCEDURE IF EXISTS SaveJobPostingInfo;
+﻿DROP PROCEDURE IF EXISTS SaveJobPostingInfo;
 DROP PROCEDURE IF EXISTS GetJobPostingDetails;
 DROP PROCEDURE IF EXISTS JobPostingReview;
 DROP FUNCTION IF EXISTS GetCompanyIdByTaxCode;
 DROP PROCEDURE IF EXISTS GetJobPostingInfo;
 GO
-
-CREATE TABLE AdvertisingMethod
-(
-	MethodID INT PRIMARY KEY IDENTITY,
-	MethodName NVARCHAR(255) NOT NULL,
-	Price DECIMAL(13,3) NOT NULL
-);
-
-INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Đăng tuyển trên báo giấy', 300000);
-INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Đăng trên các trang mạng', 400000);
-INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Banner quảng cáo', 500000);
-
-CREATE TABLE JobPosting
-(
-	JobPostingID INT PRIMARY KEY IDENTITY,
-	Position NVARCHAR(255) NOT NULL,
-	Quantity INT NOT NULL,
-	PostingTime INT NOT NULL,
-	StartTime DATE NOT NULL,
-	EndTime DATE NOT NULL,
-	Requirements NVARCHAR(500) NOT NULL,
-	CompanyID INT,
-	FeedBack NVARCHAR(300),
-	--status la thong tin tuyen dung da duyet (1), khong duoc duyet (2), chua doc (0)
-	Status INT NOT NULL
-);
-
-CREATE TABLE DetailJobPostingMethod
-(
-	JobPostingID INT,
-	MethodID INT,
-	PRIMARY KEY(JobPostingID, MethodID)
-);
-GO
-
 
 --Luu thong tin JobPosting duoc doanh nghiep cung cap
 CREATE OR ALTER PROCEDURE SaveJobPostingInfo
