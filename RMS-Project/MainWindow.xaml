@@ -16,15 +16,9 @@
         <!--Menu bar -->
 
         <!--Content -->
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width=".2*" />
-                <ColumnDefinition Width=".6*" />
-                <ColumnDefinition Width=".2*" />
-            </Grid.ColumnDefinitions>
-            
-        </Grid>
+        <view:ApplicantRegister Grid.Row="1" />
         <!--Footer -->
         <Rectangle Grid.Row="2" />
     </Grid>
+    
 </Window>

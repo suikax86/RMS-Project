@@ -16,7 +16,7 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBlock Text="Phiếu đăng ký thông tin" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <TextBlock Text="Phiếu đăng ký thông tin doanh nghiệp" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <userControls:MyTextBox Grid.Row="1" PlaceHolder="Tên công ty" />
         <userControls:MyTextBox Grid.Row="2" PlaceHolder="Mã số thuế" />
         <userControls:MyTextBox Grid.Row="3" PlaceHolder="Người đại diện" />
