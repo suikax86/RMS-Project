@@ -20,8 +20,9 @@ public class JobPostingController(IStoredProcedureService storedProcedureService
         };
         try
         {
-            var result = storedProcedureService.ExecuteStoredProcedureWithResults("GetJobPostingDetails", parameters);
-            throw new NotImplementedException();
+            var dataTable = storedProcedureService.ExecuteStoredProcedureWithResults("GetJobPostingDetails", parameters);
+            var result = storedProcedureService.ConvertDataTableToList(dataTable);
+            return Ok(result);
         }
         catch (SqlException ex)
         {

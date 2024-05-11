@@ -9,4 +9,5 @@ public interface IStoredProcedureService
     DataTable ExecuteStoredProcedureWithResults(string procedureName, SqlParameter[] parameters);
     void ExecuteQuery(string query);
     DataTable ExecuteQueryWithResults(string query);
+    List<Dictionary<string,object>> ConvertDataTableToList(DataTable dataTable);
 }

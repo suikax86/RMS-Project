@@ -31,7 +31,7 @@ CREATE TABLE JobPosting
 	Requirements NVARCHAR(500) NOT NULL,
 	CompanyID INT,
 	FeedBack NVARCHAR(300),
-	--status la thong tin tuyen dung da duyet (1), khong duoc duyet (0), chua doc (-1)
+	--status la thong tin tuyen dung da duyet (1), khong duoc duyet (2), chua doc (0)
 	Status INT NOT NULL
 );
 
@@ -61,7 +61,7 @@ BEGIN
 
 
 		INSERT INTO JobPosting (Position, Quantity, PostingTime, StartTime, EndTime, Requirements, CompanyID, FeedBack,Status)
-		VALUES (@Position, @Quantity, @PostingTime, @StartTime, @EndTime, @Requirements, @CompanyID, null,-1); -- Mac dinh Status = -1
+		VALUES (@Position, @Quantity, @PostingTime, @StartTime, @EndTime, @Requirements, @CompanyID, null,0); -- Mac dinh Status = 0
 
 		SET @JobPostingID = SCOPE_IDENTITY();
 

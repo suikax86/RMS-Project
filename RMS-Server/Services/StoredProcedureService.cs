@@ -89,4 +89,21 @@ public class StoredProcedureService(IDbConnection connection) : IStoredProcedure
 
         return result;
     }
+
+    public List<Dictionary<string, object>> ConvertDataTableToList(DataTable dataTable)
+    {
+        var convertedList = new List<Dictionary<string, object>>();
+
+        foreach (DataRow row in dataTable.Rows)
+        {
+            var rowDictionary = new Dictionary<string, object>();
+            foreach (DataColumn column in dataTable.Columns)
+            {
+                rowDictionary[column.ColumnName] = row[column];
+            }
+            convertedList.Add(rowDictionary);
+        }
+
+        return convertedList;
+    }
 }
