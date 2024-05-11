@@ -1,5 +1,6 @@
 DROP PROCEDURE IF EXISTS RegisterCompany;
 DROP PROCEDURE IF EXISTS RegisterApplicant;
+DROP PROCEDURE IF EXISTS GetJobPostings;
 GO;
 
 CREATE OR ALTER PROCEDURE RegisterApplicant
@@ -44,5 +45,10 @@ BEGIN
 END
 GO;
 
-
-
+CREATE OR ALTER PROCEDURE GetJobPostings
+    AS
+    BEGIN
+        SELECT jp.JobPostingID, c.CompanyName, jp.Position, jp.Quantity, jp.PostingTime, jp.StartTime, jp.EndTime, jp.Requirements, c.Address FROM JobPosting jp
+        JOIN Companies c ON jp.CompanyID = c.CompanyID
+        WHERE jp.Status = 1
+    END

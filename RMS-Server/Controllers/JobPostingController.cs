@@ -11,6 +11,21 @@ namespace RMS_Server.Controllers;
 [Route("[controller]")]
 public class JobPostingController(IStoredProcedureService storedProcedureService) : ControllerBase
 {
+    [HttpGet("job-postings")]
+    public IActionResult GetJobPostings()
+    {
+        try
+        {
+            var dataTable = storedProcedureService.ExecuteStoredProcedureWithResults("GetJobPostings", null);
+            var result = storedProcedureService.ConvertDataTableToList(dataTable);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = ex.Message });
+        }
+    }
+    
     [HttpGet]
     public IActionResult GetJobPostingDetails(int jobPostingId)
     {

@@ -92,13 +92,13 @@ GO;
 CREATE TABLE JobPosting
 (
     JobPostingID INT PRIMARY KEY IDENTITY,
+    CompanyID INT,
     Position NVARCHAR(255) NOT NULL,
     Quantity INT NOT NULL,
     PostingTime INT NOT NULL,
     StartTime DATE NOT NULL,
     EndTime DATE NOT NULL,
     Requirements NVARCHAR(500) NOT NULL,
-    CompanyID INT,
     FeedBack NVARCHAR(300),
     --status la thong tin tuyen dung da duyet (1), khong duoc duyet (0), chua doc (-1)
     Status INT NOT NULL
