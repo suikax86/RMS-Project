@@ -138,3 +138,20 @@ CREATE TABLE Form
     FOREIGN KEY (JobPostingID) REFERENCES JobPosting(JobPostingID)
 );
 GO
+
+
+CREATE TABLE CV
+(
+	CVID INT PRIMARY KEY,
+	ApplicantID INT,
+	JobPostingID INT,
+	Position NVARCHAR(255),
+	CVDescription NVARCHAR(255),
+	CVStatus VARCHAR(20),
+	Feedback NVARCHAR(255),
+	SentDate DATE
+
+	FOREIGN KEY (JobPostingID) REFERENCES JobPosting(JobPostingID),
+	FOREIGN KEY (ApplicantID) REFERENCES Applicant(ApplicantID),
+);
+GO
