@@ -107,3 +107,45 @@ BEGIN
     END
 END;
 GO
+
+-- Tạo stored procedure để lấy danh sách các công ty gần hết hạn tuyển dụng
+CREATE OR ALTER PROCEDURE GetNearExpiryCompanies
+AS
+BEGIN
+    SELECT JP.CompanyID, CompanyName, EndTime
+    FROM JobPosting JP
+             INNER JOIN Companies C ON JP.CompanyID = C.CompanyID
+    WHERE DATEDIFF(DAY, GETDATE(), EndTime) <= 3 AND JP.Status = 1; -- Chỉ lấy các công ty đang hoạt động và gần hết hạn
+END
+GO
+-- Tạo stored procedure để gia hạn hợp đồng tuyển dụng cho một công ty cụ thể
+CREATE OR ALTER PROCEDURE RenewContract
+    @CompanyID INT,
+    @AdditionalDays INT
+AS
+BEGIN
+    BEGIN TRY
+        DECLARE @NewEndTime DATE;
+
+        -- Lấy thời gian kết thúc hiện tại của hợp đồng
+        SELECT @NewEndTime = EndTime
+        FROM JobPosting
+        WHERE CompanyID = @CompanyID AND Status = 1;
+
+        -- Gia hạn thêm số ngày được chỉ định
+        SET @NewEndTime = DATEADD(DAY, @AdditionalDays, @NewEndTime);
+
+        -- Update thời gian kết thúc mới vào hợp đồng
+        UPDATE JobPosting
+        SET EndTime = @NewEndTime
+        WHERE CompanyID = @CompanyID AND Status = 1;
+
+        -- Trả về kết quả thành công
+        SELECT 'Gia hạn thành công. Thời gian kết thúc mới là ' + CONVERT(NVARCHAR, @NewEndTime) AS RenewalResult;
+    END TRY
+    BEGIN CATCH
+        -- Trả về lỗi nếu có lỗi xảy ra
+        THROW;
+    END CATCH
+END
+GO
