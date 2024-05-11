@@ -9,7 +9,7 @@ namespace RMS_Server.Controllers;
 [Route("[controller]")]
 public class ApplicantController(IStoredProcedureService storedProcedureService) : ControllerBase
 {
-    [HttpPost]
+    [HttpPost("register")]
     public IActionResult Register(ApplicantRegisterRequest applicant)
     {
         var parameters = new SqlParameter[]
