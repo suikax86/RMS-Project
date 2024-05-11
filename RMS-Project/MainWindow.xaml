@@ -16,7 +16,7 @@
         <!--Menu bar -->
 
         <!--Content -->
-        <view:ApplicantRegister Grid.Row="1" />
+        <view:JobList Grid.Row="1" />
         <!--Footer -->
         <Rectangle Grid.Row="2" />
     </Grid>
