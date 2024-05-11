@@ -14,95 +14,19 @@ DROP TABLE IF EXISTS Applicant;
 DROP TABLE IF EXISTS Employees;
 DROP TABLE IF EXISTS PostForm;
 DROP TABLE IF EXISTS JobPosting;
+DROP TABLE IF EXISTS AdvertisingMethod
 DROP PROCEDURE IF EXISTS RegisterCompany;
 DROP PROCEDURE IF EXISTS RegisterApplicant;
 DROP PROCEDURE IF EXISTS CreateAccountForCompany;
 DROP PROCEDURE IF EXISTS LoginUser;
 DROP PROCEDURE IF EXISTS HashPassword;
 GO;
-CREATE TABLE Roles
-(
-    RoleID INT PRIMARY KEY ,
-    RoleName NVARCHAR(50) NOT NULL
-)
-
-INSERT INTO Roles(RoleID, RoleName) VALUES (1, 'Admin');
-INSERT INTO Roles(RoleID, RoleName) VALUES (2, 'Employee');
-INSERT INTO Roles(RoleID, RoleName) VALUES (3, 'Company');
-INSERT INTO Roles(RoleID, RoleName) VALUES (4, 'Candidate');
-GO;
-
-CREATE TABLE Accounts (
-    AccountID INT PRIMARY KEY IDENTITY,
-    Username NVARCHAR(255) NOT NULL,
-    PasswordHash NVARCHAR(128) NOT NULL,
-    PasswordSalt NVARCHAR(128) NOT NULL,
-    RoleID INT,
-    FOREIGN KEY (RoleID) REFERENCES Roles(RoleID)
-);
-
-GO;
-CREATE TABLE Companies (
-    CompanyID INT PRIMARY KEY IDENTITY,
-    AccountID INT,
-    CompanyName NVARCHAR(255) NOT NULL,
-    TaxIdentificationNumber NVARCHAR(255) NOT NULL,
-    Representative NVARCHAR(255) NOT NULL,
-    Address NVARCHAR(255),
-    Email NVARCHAR(255),
-    FOREIGN KEY (AccountID) REFERENCES Accounts(AccountID),
-    UNIQUE (CompanyName, TaxIdentificationNumber)
-);
-GO;
-CREATE TABLE Employees (
-    EmployeeID INT PRIMARY KEY IDENTITY,
-    EmployeeName NVARCHAR(255) NOT NULL,
-    Address NVARCHAR(255) NOT NULL,
-    DOB DATE NOT NULL,
-    Email NVARCHAR(255),
-    Phone NVARCHAR(10)
-);
-GO;
-
-CREATE TABLE Applicant (
-    ApplicantID INT PRIMARY KEY IDENTITY,
-    AccountID INT,
-    ApplicantName NVARCHAR(24) NOT NULL,
-    IdentityCardNumber NVARCHAR(255) NOT NULL,
-    Gender NVARCHAR(255) NOT NULL,
-    Email NVARCHAR(255) NOT NULL,
-    ApplicantAddress NVARCHAR(255) NOT NULL,
-    DOB DATE NOT NULL,
-    FOREIGN KEY (AccountID) REFERENCES Accounts(AccountID),
-    UNIQUE (IdentityCardNumber)
-);
-GO;
-
--- Tạo bảng phiếu đăng tuyển
-CREATE TABLE PostForm (
-    FormID INT PRIMARY KEY IDENTITY,
-    CompanyID INT NOT NULL,
-    Position NVARCHAR(255) NOT NULL,
-    Quantity INT NOT NULL,
-    StartTime DATE NOT NULL,
-    EndTime DATE NOT NULL,
-    Requirements NVARCHAR(255)
-    CONSTRAINT FK_PostForm_Company FOREIGN KEY (CompanyID) REFERENCES Companies(CompanyID)
-);
-GO;
 
 
---- Tạo bảng phiếu quảng cáo
-CREATE TABLE JobPosting (
-    JobPostingID INT PRIMARY KEY IDENTITY,
-    NV_ID INT NOT NULL,
-    PostTime DATE NOT NULL,PostingMethod NVARCHAR(255) NOT NULL,
-    PostFormID INT NOT NULL,
-    PostStatus NVARCHAR(255) NOT NULL,
-    CONSTRAINT FK_JobPosting_PostForm FOREIGN KEY (PostFormID) REFERENCES PostForm(FormID),
-    CONSTRAINT FK_JobPosting_NV FOREIGN KEY (NV_ID) REFERENCES Employees(EmployeeID)
-);
-GO;
+
+
+
+
 
 CREATE OR ALTER PROCEDURE RegisterApplicant
     @ApplicantName NVARCHAR(24),
@@ -124,7 +48,6 @@ BEGIN
         END
 END
 GO;
-
 
 
 CREATE OR ALTER PROCEDURE RegisterCompany

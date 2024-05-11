@@ -7,17 +7,10 @@ namespace RMS_Server.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ApplicantController : ControllerBase
+public class ApplicantController(IStoredProcedureService storedProcedureService) : ControllerBase
 {
-    private readonly IStoredProcedureService _storedProcedureService;
-
-    public ApplicantController(IStoredProcedureService storedProcedureService)
-    {
-        _storedProcedureService = storedProcedureService;
-    }
-
     [HttpPost]
-    public IActionResult register(ApplicantRegisterRequest applicant)
+    public IActionResult Register(ApplicantRegisterRequest applicant)
     {
         var parameters = new SqlParameter[]
         {
@@ -30,7 +23,7 @@ public class ApplicantController : ControllerBase
         };
         try
         {
-            _storedProcedureService.ExecuteStoredProcedure("RegisterApplicant", parameters);
+            storedProcedureService.ExecuteStoredProcedure("RegisterApplicant", parameters);
             return Ok("Applicant registered successfully!");
         }
         catch (SqlException ex)

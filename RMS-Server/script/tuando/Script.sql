@@ -16,9 +16,9 @@ CREATE TABLE AdvertisingMethod
 	Price DECIMAL(13,3) NOT NULL
 );
 
-INSERT INTO AdvertisingMethod(MethodName, Price) VALUES ('Đăng tuyển trên báo giấy', 300000);
-INSERT INTO AdvertisingMethod(MethodName, Price) VALUES ('Đăng trên các trang mạng', 400000);
-INSERT INTO AdvertisingMethod(MethodName, Price) VALUES ('Banner quảng cáo', 500000);
+INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Đăng tuyển trên báo giấy', 300000);
+INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Đăng trên các trang mạng', 400000);
+INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Banner quảng cáo', 500000);
 
 CREATE TABLE JobPosting
 (
@@ -104,7 +104,7 @@ BEGIN
 			BEGIN
 				IF @ApproveOrNot = 1 
 					UPDATE JobPosting SET Status = @ApproveOrNot WHERE JobPostingID = @JobPostingID;
-				ELSE IF @ApproveOrNot = 0
+				ELSE IF @ApproveOrNot = 2
 					UPDATE JobPosting SET Status = @ApproveOrNot, FeedBack = @FeedBack  WHERE JobPostingID = @JobPostingID;
 			END
 		ELSE

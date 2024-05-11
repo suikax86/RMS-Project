@@ -7,15 +7,8 @@ namespace RMS_Server.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class CompanyController : ControllerBase
+public class CompanyController(IStoredProcedureService storedProcedureService) : ControllerBase
 {
-    private readonly IStoredProcedureService _storedProcedureService;
-    
-    public CompanyController(IStoredProcedureService storedProcedureService)
-    {
-        _storedProcedureService = storedProcedureService;
-    }
-    
     [HttpPost("register")]
     public IActionResult Register(CompanyRegisterRequest company)
     {
@@ -30,7 +23,7 @@ public class CompanyController : ControllerBase
 
         try
         {
-            _storedProcedureService.ExecuteStoredProcedure("RegisterCompany", parameters);
+            storedProcedureService.ExecuteStoredProcedure("RegisterCompany", parameters);
             return Ok("Company registered successfully!");
         }
         catch (SqlException ex)
@@ -59,7 +52,7 @@ public class CompanyController : ControllerBase
 
         try
         {
-            _storedProcedureService.ExecuteStoredProcedure("CreateAccountForCompany", parameters);
+            storedProcedureService.ExecuteStoredProcedure("CreateAccountForCompany", parameters);
             return Ok("Account created successfully!");
         }
         catch (SqlException ex)
@@ -86,7 +79,7 @@ public class CompanyController : ControllerBase
 
         try
         {
-            var result = _storedProcedureService.ExecuteStoredProcedureWithResults("LoginUser", parameters);
+            var result = storedProcedureService.ExecuteStoredProcedureWithResults("LoginUser", parameters);
 
             if (result.Rows.Count > 0)
             {

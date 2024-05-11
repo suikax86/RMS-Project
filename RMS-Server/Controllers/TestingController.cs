@@ -6,20 +6,13 @@ namespace RMS_Server.Controllers;
 
 [ApiController]
 [Route("controller")]
-public class TestingController : ControllerBase
+public class TestingController(IStoredProcedureService storedProcedureService) : ControllerBase
 {
-    IStoredProcedureService _storedProcedureService;
-
-    public TestingController(IStoredProcedureService storedProcedureService)
-    {
-        _storedProcedureService = storedProcedureService;
-    }
-
     // GET
     [HttpGet]
     public IActionResult Get(string query)
     {
-        var dt = _storedProcedureService.ExecuteQueryWithResults(query);
+        var dt = storedProcedureService.ExecuteQueryWithResults(query);
 
         var result = new List<Dictionary<string, object>>();
         foreach (DataRow row in dt.Rows)
