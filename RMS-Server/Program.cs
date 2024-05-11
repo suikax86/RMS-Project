@@ -17,6 +17,7 @@ string connectionString = builder.Configuration.GetConnectionString("DefaultConn
 builder.Services.AddTransient<IDbConnection>(_ => new SqlConnection(connectionString));
 // inject services
 builder.Services.AddTransient<IStoredProcedureService, StoredProcedureService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
 
