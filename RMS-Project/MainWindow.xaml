@@ -6,21 +6,16 @@
         xmlns:view="clr-namespace:RMS_Project.View"
 
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="130" Width="400">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70" />
-            <RowDefinition />
-            <RowDefinition Height="20" />
-        </Grid.RowDefinitions>
-        <!--Menu bar -->
-
-        <!--Content -->
-        
-        <view:CompanyRegisterForm Grid.Row="1" />
-        
-        <!--Footer -->
-        <Rectangle Grid.Row="2" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Click="Button_Click">Bạn là Doanh nghiệp</Button>
+        <Button Grid.Column="1" Click="Button_Click_1">Bạn là Ứng viên</Button>
+        <Button Grid.Column="2" Click="Button_Click_2">Nhân viên</Button>
     </Grid>
-    
+
 </Window>

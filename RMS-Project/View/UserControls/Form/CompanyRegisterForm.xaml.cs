@@ -41,12 +41,14 @@ public partial class CompanyRegisterForm : UserControl
 
             if (response.IsSuccessStatusCode)
             {
-                MessageBox.Show("Company registered successfully!");
+                MessageBox.Show("Company registered successfully!","Successfully",MessageBoxButton.OK,MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show($"Failed to register Company: {responseString}");
+                MessageBox.Show($"Failed to register Company: {responseString}","", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            // then close the form
+            Window.GetWindow(this)?.Close();
         }
         catch (Exception ex)
         {

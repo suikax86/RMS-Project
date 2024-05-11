@@ -23,10 +23,10 @@
         <userControls:MyTextBox Grid.Row="4" PlaceHolder="Địa chỉ" />
         <userControls:MyTextBox Grid.Row="5" PlaceHolder="Email" />
         <Button Grid.Row="6" Height="25" Width="60" Click="ButtonBase_OnClick" Content="Gửi" />
-        <TextBox x:Name="ComapnyName_TextBox" Margin="91,8,23,8" Grid.Row="1"/>
-        <TextBox x:Name="TaxIdentificationNumber_TextBox" Margin="91,8,23,8" Grid.Row="2"/>
+        <TextBox x:Name="ComapnyName_TextBox" Margin="114,8,23,8" Grid.Row="1"/>
+        <TextBox x:Name="TaxIdentificationNumber_TextBox" Margin="114,8,23,8" Grid.Row="2"/>
         <TextBox x:Name="Representative_TextBox" Margin="114,8,23,8" Grid.Row="3"/>
-        <TextBox x:Name="Address_TextBox" Margin="64,8,23,8" Grid.Row="4"/>
-        <TextBox x:Name="Email_TextBox" Margin="64,8,23,8" Grid.Row="5"/>
+        <TextBox x:Name="Address_TextBox" Margin="114,8,23,8" Grid.Row="4"/>
+        <TextBox x:Name="Email_TextBox" Margin="114,8,23,8" Grid.Row="5"/>
     </Grid>
 </UserControl>

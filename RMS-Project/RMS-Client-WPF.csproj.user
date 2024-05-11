@@ -2,18 +2,42 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="View\Company\CompanyRegister.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\JobPostingDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\JobPostingList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Menu\MenuApplicant.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Menu\MenuCompany.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Menu\MenuEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="View\Company\CompanyRegister.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\JobPostingDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\JobPostingList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Menu\MenuApplicant.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Menu\MenuCompany.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Menu\MenuEmployee.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
