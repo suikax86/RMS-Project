@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\",
+  "WorkspaceRootPath": "D:\\PTTKHTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\projects\\ptttk\\projectv2\\rms-project\\rms-project\\view\\companyui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\companyui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\pttkhttt\\rms-project\\view\\companyregisterform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\companyregisterform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\projects\\ptttk\\projectv2\\rms-project\\rms-project\\view\\jobpostinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\jobpostinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\pttkhttt\\rms-project\\view\\applicantregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\applicantregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\projects\\ptttk\\projectv2\\rms-project\\rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\pttkhttt\\rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Project.csproj|solutionrelative:rms-project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\pttkhttt\\rms-project\\view\\companyregisterform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\companyregisterform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\pttkhttt\\rms-project\\view\\applicantregister.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\applicantregister.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,49 +46,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CompanyUI.xaml",
-              "DocumentMoniker": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\View\\CompanyUI.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\CompanyUI.xaml",
-              "ToolTip": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\View\\CompanyUI.xaml",
-              "RelativeToolTip": "RMS-Project\\View\\CompanyUI.xaml",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\PTTKHTTT\\RMS-Project\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\MainWindow.xaml",
+              "ToolTip": "D:\\PTTKHTTT\\RMS-Project\\MainWindow.xaml",
+              "RelativeToolTip": "RMS-Project\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-10T12:12:52.413Z",
+              "WhenOpened": "2024-05-11T11:09:22.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\MainWindow.xaml",
-              "ToolTip": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\MainWindow.xaml",
-              "RelativeToolTip": "RMS-Project\\MainWindow.xaml",
+              "DocumentIndex": 4,
+              "Title": "ApplicantRegister.xaml",
+              "DocumentMoniker": "D:\\PTTKHTTT\\RMS-Project\\View\\ApplicantRegister.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\ApplicantRegister.xaml",
+              "ToolTip": "D:\\PTTKHTTT\\RMS-Project\\View\\ApplicantRegister.xaml",
+              "RelativeToolTip": "RMS-Project\\View\\ApplicantRegister.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-31T14:05:31.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\MainWindow.xaml",
-              "ToolTip": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\MainWindow.xaml",
-              "RelativeToolTip": "RMS-Project\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-10T12:07:45.587Z",
+              "WhenOpened": "2024-05-11T10:03:14.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "JobPostingList.xaml",
-              "DocumentMoniker": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\View\\JobPostingList.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\JobPostingList.xaml",
-              "ToolTip": "D:\\Projects\\PTTTK\\Projectv2\\RMS-Project\\RMS-Project\\View\\JobPostingList.xaml",
-              "RelativeToolTip": "RMS-Project\\View\\JobPostingList.xaml",
+              "Title": "ApplicantRegister.xaml.cs",
+              "DocumentMoniker": "D:\\PTTKHTTT\\RMS-Project\\View\\ApplicantRegister.xaml.cs",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\ApplicantRegister.xaml.cs",
+              "ToolTip": "D:\\PTTKHTTT\\RMS-Project\\View\\ApplicantRegister.xaml.cs",
+              "RelativeToolTip": "RMS-Project\\View\\ApplicantRegister.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCIAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T10:02:08.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompanyRegisterForm.xaml.cs",
+              "DocumentMoniker": "D:\\PTTKHTTT\\RMS-Project\\View\\CompanyRegisterForm.xaml.cs",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CompanyRegisterForm.xaml.cs",
+              "ToolTip": "D:\\PTTKHTTT\\RMS-Project\\View\\CompanyRegisterForm.xaml.cs",
+              "RelativeToolTip": "RMS-Project\\View\\CompanyRegisterForm.xaml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T10:02:00.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompanyRegisterForm.xaml",
+              "DocumentMoniker": "D:\\PTTKHTTT\\RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "RelativeDocumentMoniker": "RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "ToolTip": "D:\\PTTKHTTT\\RMS-Project\\View\\CompanyRegisterForm.xaml",
+              "RelativeToolTip": "RMS-Project\\View\\CompanyRegisterForm.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-10T12:08:21.654Z",
+              "WhenOpened": "2024-05-11T10:00:41.418Z",
               "EditorCaption": ""
             }
           ]

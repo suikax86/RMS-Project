@@ -1,4 +1,4 @@
-﻿namespace RMS_Project.Model.Enums;
+namespace RMS_Project.Model.Enums;
 
 public enum Gender
 {
