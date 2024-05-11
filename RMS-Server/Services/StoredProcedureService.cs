@@ -22,8 +22,13 @@ public class StoredProcedureService(IDbConnection connection) : IStoredProcedure
             }
         }
 
-        _connection.Open();
+        if (_connection.State != ConnectionState.Open)
+        {
+            _connection.Open();
+        }
+        
         command.ExecuteNonQuery();
+        
         _connection.Close();
     }
 
@@ -40,12 +45,48 @@ public class StoredProcedureService(IDbConnection connection) : IStoredProcedure
             }
         }
 
-        _connection.Open();
+        if (_connection.State != ConnectionState.Open)
+        {
+            _connection.Open();
+        }
+        
         var reader = command.ExecuteReader();
         var result = new DataTable();
         result.Load(reader);
+        
         _connection.Close();
+        
         return result;
     }
 
+    public void ExecuteQuery(string query)
+    {
+            using var command = _connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = query;
+            
+            _connection.Open();
+            command.ExecuteNonQuery();
+            _connection.Close();
+    }
+
+    public DataTable ExecuteQueryWithResults(string query)
+    {
+        using var command = _connection.CreateCommand();
+        command.CommandType = CommandType.Text;
+        command.CommandText = query;
+        
+        if (_connection.State != ConnectionState.Open)
+        {
+            _connection.Open();
+        }
+        
+        var reader = command.ExecuteReader();
+        var result = new DataTable();
+        result.Load(reader);
+        
+        _connection.Close();
+
+        return result;
+    }
 }

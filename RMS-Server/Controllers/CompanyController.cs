@@ -31,7 +31,7 @@ public class CompanyController : ControllerBase
         try
         {
             _storedProcedureService.ExecuteStoredProcedure("RegisterCompany", parameters);
-            return Ok();
+            return Ok("Company registered successfully!");
         }
         catch (SqlException ex)
         {
@@ -60,7 +60,7 @@ public class CompanyController : ControllerBase
         try
         {
             _storedProcedureService.ExecuteStoredProcedure("CreateAccountForCompany", parameters);
-            return Ok();
+            return Ok("Account created successfully!");
         }
         catch (SqlException ex)
         {
