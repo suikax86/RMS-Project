@@ -9,14 +9,22 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <TabControl SelectionChanged="TabControl_SelectionChanged" Grid.Row="0">
-            <TabItem Header="Danh sách hồ sơ" Name="Tab1" />
-            <TabItem Header="Danh sách hồ sơ đã xử lý" Name="Tab2" />
-        </TabControl>
-        <Frame Grid.Row="1" Name="contentFrame" />
-
-
+        <ListView Grid.Row="1" Margin="10" ItemsSource="{Binding cvList}" Name="CVList_ListView"
+              MouseDoubleClick="ListView_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Mã hồ sơ" DisplayMemberBinding="{Binding CV_ID}" />
+                    <GridViewColumn Header="Vị trí" DisplayMemberBinding="{Binding Position}" />
+                    <GridViewColumn Header="Doanh nghiệp đăng tuyển" DisplayMemberBinding="{Binding Company}" />
+                    <GridViewColumn Header="Trạng thái" DisplayMemberBinding="{Binding Status}" />
+                    
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Hủy" Margin="5" Width="100" />
+        </StackPanel>
     </Grid>
 </Window>
