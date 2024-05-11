@@ -1,12 +1,12 @@
 ﻿USE RMS;
 GO
 
-DROP TABLE IF EXISTS AdvertisingMethod
-DROP TABLE IF EXISTS JobPosting;
-DROP TABLE IF EXISTS DetailJobPostingMethod;
+
 DROP PROCEDURE IF EXISTS SaveJobPostingInfo;
 DROP PROCEDURE IF EXISTS GetJobPostingDetails;
 DROP PROCEDURE IF EXISTS JobPostingReview;
+DROP FUNCTION IF EXISTS GetCompanyIdByTaxCode;
+DROP PROCEDURE IF EXISTS GetJobPostingInfo;
 GO
 
 CREATE TABLE AdvertisingMethod
@@ -116,3 +116,90 @@ BEGIN
 		THROW 51000, 'Error when updating, try again', 1;
 	END CATCH;
 END;
+GO;
+
+CREATE FUNCTION GetCompanyIdByTaxCode (@TaxCode NVARCHAR(255))
+    RETURNS INT
+AS
+BEGIN
+    DECLARE @CompanyId INT
+
+    SELECT @CompanyId = CompanyID
+    FROM Companies
+    WHERE TaxIdentificationNumber = @TaxCode
+
+    IF @CompanyId IS NULL
+        BEGIN
+            -- Không tìm thấy mã số thuế, trả về giá trị NULL
+            SET @CompanyId = NULL
+        END
+
+    RETURN @CompanyId
+END;
+GO;
+
+CREATE OR ALTER PROCEDURE GetJobPostingInfo
+@TaxCode NVARCHAR(255)
+AS
+BEGIN
+    DECLARE @CompanyId INT
+
+    SET @CompanyId = dbo.GetCompanyIdByTaxCode(@TaxCode)
+
+    IF @CompanyId IS NULL
+        BEGIN
+            THROW 51000, 'Company not found for Tax Code', 1;
+        END
+    ELSE
+        BEGIN
+            BEGIN TRY
+                SELECT * FROM JobPosting jpt WHERE jpt.CompanyID = @CompanyId
+            END TRY
+            BEGIN CATCH
+                THROW 51000, 'Error when querying data, please try again', 1;
+            END CATCH;
+        END
+END;
+GO
+--Luu thong tin job posting
+CREATE OR ALTER PROCEDURE SaveJobPostingInfo
+    @Position NVARCHAR(255),
+    @Quantity INT,
+    @PostingTime NVARCHAR(255),
+    @StartTime DATE,
+    @EndTime DATE,
+    @Requirements NVARCHAR(500),
+    @TaxCode NVARCHAR(255),
+    @AdvertisingMethod NVARCHAR(255)
+AS
+BEGIN
+    BEGIN TRY
+        DECLARE @JobPostingID INT;
+        DECLARE @CompanyID INT;
+
+        SET @CompanyID = dbo.GetCompanyIdByTaxCode(@TaxCode)
+
+        IF @CompanyID IS NULL
+            BEGIN
+                THROW 51000, 'Company not found for Tax Code ', 1;
+                return;
+            END
+        ELSE
+            BEGIN
+                INSERT INTO JobPosting (Position, Quantity, PostingTime, StartTime, EndTime, Requirements, CompanyID, FeedBack, Status)
+                VALUES (@Position, @Quantity, @PostingTime, @StartTime, @EndTime, @Requirements, @CompanyID, NULL, 0); -- Mặc định Status = 0
+
+                SET @JobPostingID = SCOPE_IDENTITY();
+
+                INSERT INTO DetailJobPostingMethod (JobPostingID, MethodID)
+                SELECT @JobPostingID, MethodID
+                FROM AdvertisingMethod
+                WHERE CHARINDEX(CONVERT(NVARCHAR, MethodID), @AdvertisingMethod) > 0;
+            END
+    END TRY
+    BEGIN CATCH
+        THROW 51000, 'Error when inserting, try again', 1;
+    END CATCH;
+END;
+GO
+    

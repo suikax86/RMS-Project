@@ -46,9 +46,16 @@ END
 GO;
 
 CREATE OR ALTER PROCEDURE GetJobPostings
-    AS
-    BEGIN
-        SELECT jp.JobPostingID, c.CompanyName, jp.Position, jp.Quantity, jp.PostingTime, jp.StartTime, jp.EndTime, jp.Requirements, c.Address FROM JobPosting jp
-        JOIN Companies c ON jp.CompanyID = c.CompanyID
+AS
+BEGIN
+    BEGIN TRY
+        SELECT jp.JobPostingID, c.CompanyName, jp.Position, jp.Quantity, jp.PostingTime, jp.StartTime, jp.EndTime, jp.Requirements, c.Address
+        FROM JobPosting jp
+                 JOIN Companies c ON jp.CompanyID = c.CompanyID
         WHERE jp.Status = 1
-    END
+    END TRY
+    BEGIN CATCH
+        THROW 51000, 'Error when querying data, please try again', 1;
+    END CATCH;
+END;
+GO;
