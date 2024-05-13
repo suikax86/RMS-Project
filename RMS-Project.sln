@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34814.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS-Server", "RMS-Server\RMS-Server.csproj", "{4B8351AF-F5AE-470C-A644-15DC285C88F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS-Client-Blazor", "RMS-Client-Blazor\RMS-Client-Blazor.csproj", "{42F9D6EE-4862-4F10-BE68-108353A2ECF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4B8351AF-F5AE-470C-A644-15DC285C88F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B8351AF-F5AE-470C-A644-15DC285C88F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B8351AF-F5AE-470C-A644-15DC285C88F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F9D6EE-4862-4F10-BE68-108353A2ECF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F9D6EE-4862-4F10-BE68-108353A2ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F9D6EE-4862-4F10-BE68-108353A2ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F9D6EE-4862-4F10-BE68-108353A2ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
