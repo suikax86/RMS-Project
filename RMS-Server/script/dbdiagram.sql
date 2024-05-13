@@ -3,27 +3,33 @@ IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_T
     BEGIN
           ALTER TABLE JobPosting DROP CONSTRAINT IF EXISTS FK_JobPosting_Companies;
     END
-GO;
+GO
 
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_TYPE = 'FOREIGN KEY' AND TABLE_NAME = 'CV')
     BEGIN
         ALTER TABLE CV DROP CONSTRAINT IF EXISTS FK_CV_PostForm;
     END       
-GO;
+GO
+
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_TYPE = 'FOREIGN KEY' AND TABLE_NAME = 'CV')
+    BEGIN
+        ALTER TABLE CV DROP CONSTRAINT IF EXISTS FK_CV_JobPosting;
+        ALTER TABLE CV DROP CONSTRAINT IF EXISTS FK_CV_Applicant;
+    END
 
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_TYPE = 'FOREIGN KEY' AND TABLE_NAME = 'DetailJobPostingMethod')
     BEGIN
         ALTER TABLE DetailJobPostingMethod DROP CONSTRAINT IF EXISTS FK_DetailJobPostingMethod_AdvertisingMethod;
         ALTER TABLE DetailJobPostingMethod DROP CONSTRAINT IF EXISTS FK_DetailJobPostingMethod_JobPosting;
     END
-GO;
+GO
 
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_TYPE = 'FOREIGN KEY' AND TABLE_NAME = 'Form')
     BEGIN
         ALTER TABLE Form DROP CONSTRAINT IF EXISTS FK_Form_Applicant;
         ALTER TABLE Form DROP CONSTRAINT IF EXISTS FK_Form_JobPosting;
     END
-GO;
+GO
 
 DROP TABLE IF EXISTS Employees;
 DROP TABLE IF EXISTS Roles;
@@ -36,20 +42,20 @@ DROP TABLE IF EXISTS Companies;
 
 
 
-GO;
+GO
 
 CREATE TABLE Roles
 (
     RoleID INT PRIMARY KEY ,
     RoleName NVARCHAR(50) NOT NULL
 )
-GO;
+GO
 
 INSERT INTO Roles(RoleID, RoleName) VALUES (1, 'Admin');
 INSERT INTO Roles(RoleID, RoleName) VALUES (2, 'Employee');
 INSERT INTO Roles(RoleID, RoleName) VALUES (3, 'Company');
 INSERT INTO Roles(RoleID, RoleName) VALUES (4, 'Candidate');
-GO;
+GO
 
 
 CREATE TABLE Companies (
@@ -61,7 +67,7 @@ CREATE TABLE Companies (
     Email NVARCHAR(255),
     UNIQUE (CompanyName, TaxIdentificationNumber)
 );
-GO;
+GO
 
 CREATE TABLE Employees (
      EmployeeID INT PRIMARY KEY IDENTITY,
@@ -71,7 +77,7 @@ CREATE TABLE Employees (
      Email NVARCHAR(255),
      Phone NVARCHAR(10)
 );
-GO;
+GO
 
 CREATE TABLE Applicant (
     ApplicantID INT PRIMARY KEY IDENTITY,
@@ -83,7 +89,7 @@ CREATE TABLE Applicant (
     DOB DATE NOT NULL,
     UNIQUE (IdentityCardNumber)
 );
-GO;
+GO
 
 
 CREATE TABLE AdvertisingMethod
@@ -92,12 +98,12 @@ CREATE TABLE AdvertisingMethod
     MethodName NVARCHAR(255) NOT NULL,
     Price DECIMAL(13,3) NOT NULL
 );
-GO;
+GO
 
 INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Đăng tuyển trên báo giấy', 300000);
 INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Đăng trên các trang mạng', 400000);
 INSERT INTO AdvertisingMethod(MethodName, Price) VALUES (N'Banner quảng cáo', 500000);
-GO;
+GO
 
 CREATE TABLE JobPosting
 (
@@ -114,7 +120,7 @@ CREATE TABLE JobPosting
     Status INT NOT NULL
     FOREIGN KEY (CompanyID) REFERENCES Companies(CompanyID)
 );
-GO;
+GO
 
 CREATE TABLE DetailJobPostingMethod
 (
