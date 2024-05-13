@@ -19,7 +19,7 @@ public partial class MainWindow : Window
         var menuCompany = new MenuCompany();
         this.Hide();
         menuCompany.ShowDialog();
-        this.Show();
+        this.Close();
 
     }
 
@@ -28,7 +28,7 @@ public partial class MainWindow : Window
         var menuApplicant = new MenuApplicant();
         this.Hide();
         menuApplicant.ShowDialog();
-        this.Show();
+        this.Close();
 
 
     }

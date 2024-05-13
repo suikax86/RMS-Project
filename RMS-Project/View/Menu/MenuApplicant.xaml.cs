@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using RMS_Project.View.Applicant;
+using System.Windows;
 
 namespace RMS_Project.View.Menu
 {
@@ -18,6 +19,14 @@ namespace RMS_Project.View.Menu
            this.Hide();
            applicantRegister.ShowDialog();
            this.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var registeredApplicant = new RegisteredApplicant();
+            this.Hide();
+            registeredApplicant.ShowDialog();
+            this.Show();
         }
     }
 }

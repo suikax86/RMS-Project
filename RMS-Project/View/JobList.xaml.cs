@@ -11,10 +11,11 @@ public partial class JobList : UserControl
 {
     private readonly JobPostingService _jobPostingService = new JobPostingService(new HttpClient());
     private object selectedJob = null;
-   
+    private String IdentityCardNumber { get; set; }
 
-    public JobList()
+    public JobList(string identityCardNumber)
     {
+        IdentityCardNumber = identityCardNumber;
         InitializeComponent();
         Loaded += JobList_Loaded;
     }
@@ -36,7 +37,7 @@ public partial class JobList : UserControl
     private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
     {
         
-       ApplicantSubmission applicantSubmissionWindow = new ApplicantSubmission();
+       ApplicantSubmission applicantSubmissionWindow = new ApplicantSubmission(selectedJob, IdentityCardNumber);
        applicantSubmissionWindow.ShowDialog(); // Use ShowDialog for a modal window or Show for a non-modal window
 
        

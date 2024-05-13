@@ -16,6 +16,6 @@
 
         </Grid.ColumnDefinitions>
         <Button Grid.Row="0" FontSize="24" Click="Button_Click">Đăng ký làm ứng viên</Button>
-        <Button Grid.Row="1" FontSize="24">Xem danh sách vị trí tuyển dụng</Button>
+        <Button Grid.Row="1" FontSize="24" Click="Button_Click_1">Đã đăng ký ứng viên</Button>
     </Grid>
 </Window>

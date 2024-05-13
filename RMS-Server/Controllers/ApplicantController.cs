@@ -39,4 +39,55 @@ public class ApplicantController(IStoredProcedureService storedProcedureService)
         }
     }
     
+    [HttpGet("check")]
+    public IActionResult CheckApplicantExists(string identityCardNumber)
+    {
+        var parameters = new SqlParameter[]
+        {
+            new("@IdentityCardNumber", identityCardNumber)
+        };
+        try
+        {
+            storedProcedureService.ExecuteStoredProcedure("CheckApplicantExists", parameters);
+            return Ok("Applicant exists!");
+        }
+        catch (SqlException ex)
+        {
+            if (ex.Number == 51000)
+            {
+                return Conflict(new { message = ex.Message });
+            }
+            else
+            {
+                throw;
+            }
+        }
+    }
+    
+    [HttpGet]
+    public IActionResult GetApplicant(string identityCardNumber)
+    {
+        var parameters = new SqlParameter[]
+        {
+            new("@IdentityCardNumber", identityCardNumber)
+        };
+        try
+        {
+            var db = storedProcedureService.ExecuteStoredProcedureWithResults("GetApplicantInfo", parameters);
+            var result = storedProcedureService.ConvertDataTableToList(db);
+            return Ok(result);
+        }
+        catch (SqlException ex)
+        {
+            if (ex.Number == 51000)
+            {
+                return Conflict(new { message = ex.Message });
+            }
+            else
+            {
+                throw;
+            }
+        }
+    }
+    
 }
