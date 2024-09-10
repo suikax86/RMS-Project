@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Source\\Project\\RMS-Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\source\\project\\rms-project\\rms-project\\view\\applicant\\applicantregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\applicant\\applicantregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\source\\project\\rms-project\\rms-project\\view\\menu\\menuapplicant.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\menu\\menuapplicant.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|d:\\source\\project\\rms-project\\rms-project\\view\\menu\\menuapplicant.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{139A3C9C-DD05-423A-A70A-7BF292B1615D}|RMS-Project\\RMS-Client-WPF.csproj|solutionrelative:rms-project\\view\\menu\\menuapplicant.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Projects\\RMS-Project\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicantRegister.xaml.cs",
-              "DocumentMoniker": "D:\\Source\\Project\\RMS-Project\\RMS-Project\\View\\Applicant\\ApplicantRegister.xaml.cs",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\Applicant\\ApplicantRegister.xaml.cs",
-              "ToolTip": "D:\\Source\\Project\\RMS-Project\\RMS-Project\\View\\Applicant\\ApplicantRegister.xaml.cs",
-              "RelativeToolTip": "RMS-Project\\View\\Applicant\\ApplicantRegister.xaml.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwD4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T21:49:37.502Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -48,31 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuApplicant.xaml.cs",
-              "DocumentMoniker": "D:\\Source\\Project\\RMS-Project\\RMS-Project\\View\\Menu\\MenuApplicant.xaml.cs",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\Menu\\MenuApplicant.xaml.cs",
-              "ToolTip": "D:\\Source\\Project\\RMS-Project\\RMS-Project\\View\\Menu\\MenuApplicant.xaml.cs",
-              "RelativeToolTip": "RMS-Project\\View\\Menu\\MenuApplicant.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAMwBAAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T21:49:28.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuApplicant.xaml",
-              "DocumentMoniker": "D:\\Source\\Project\\RMS-Project\\RMS-Project\\View\\Menu\\MenuApplicant.xaml",
-              "RelativeDocumentMoniker": "RMS-Project\\View\\Menu\\MenuApplicant.xaml",
-              "ToolTip": "D:\\Source\\Project\\RMS-Project\\RMS-Project\\View\\Menu\\MenuApplicant.xaml",
-              "RelativeToolTip": "RMS-Project\\View\\Menu\\MenuApplicant.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-11T21:49:20.227Z",
-              "EditorCaption": ""
             }
           ]
         }
